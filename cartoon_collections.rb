@@ -24,7 +24,7 @@ def long_planeteer_calls(planeteer_calls)
     
   
   f = true
-  if l.
+  if l.size == 0
     f = false 
   end
   f
