@@ -22,10 +22,11 @@ def long_planeteer_calls(planeteer_calls)
     element.length > 4
     l += 1
   end
+  f = true
   if l == 0 
-    false 
+    f = false 
   end
-  true 
+  f
 end
 
 def find_valid_calls(planeteer_calls)
