@@ -36,9 +36,10 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   first = []
   index = 0
+  subindex = 0
   while index < planeteer_calls.length do 
-    valid_calls.each do |item|
-      if planeteer_calls[index] == item
+      while subindex < valid_calls.length do 
+      if planeteer_calls[index] == valid_calls[subindex]
         first<< planeteer_calls[index]
     end
   end
