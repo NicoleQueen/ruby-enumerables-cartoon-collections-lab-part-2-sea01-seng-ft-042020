@@ -35,10 +35,11 @@ def find_valid_calls(planeteer_calls)
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above 
   # Return the first valid call found, or return nil if no valid calls are found
   first = []
-  planeteer_calls.each do |element|
+  index = 0
+  while index < planeteer_calls.length do 
     valid_calls.each do |item|
-      if element == item
-        first<< element
+      if planeteer_calls[index] == item
+        first<< planeteer_calls[index]
     end
   end
   first[0]
